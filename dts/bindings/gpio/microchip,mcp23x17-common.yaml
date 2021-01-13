@@ -1,0 +1,23 @@
+#
+# Copyright (c) 2018-2020 Prevas A/S
+# Copyright (c) 2021 Dimitris Zervas
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+properties:
+    label:
+      required: true
+
+    "#gpio-cells":
+      const: 2
+
+    ngpios:
+      type: int
+      required: true
+      const: 16
+      description: Number of gpios supported
+
+gpio-cells:
+  - pin
+  - flags
